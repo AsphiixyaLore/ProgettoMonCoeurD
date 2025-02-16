@@ -1,0 +1,232 @@
+/* Stili generali */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #ffe6f2, #ffb6c1);
+  color: #4a4a4a;
+  text-align: center;
+}
+.typewriter-container {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ff4d79;
+  text-align: center;
+  margin-top: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #ff4d79; /* Effetto cursore */
+}
+
+/* Sezione Hero */
+.hero {
+  background: linear-gradient(135deg, #ff4d79, #ff85a2);
+  padding: 60px 20px;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin: 0;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.4em;
+  opacity: 0.9;
+}
+
+.proecontro {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+
+  .pro {
+    color: rgb(0, 255, 0);
+    text-shadow: -1px 1px 2px black;
+  }
+  .contro {
+    text-shadow: -1px 1px 2px black;
+    color: red;
+  }
+  div {
+    padding: 20px;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .più {
+    color: rgb(0, 255, 0);
+    font-size: 20px;
+    text-shadow: -1px 1px 2px black;
+  }
+  .meno {
+    color: red;
+    font-size: 20px;
+    text-shadow: -1px 1px 2px black;
+  }
+  span {
+    font-style: italic;
+    font-family: monospace;
+    font-size: 17px;
+  }
+}
+
+/* Galleria di Foto */
+.gallery {
+  padding: 40px 20px;
+}
+
+.gallery h2 {
+  font-size: 2em;
+  color: #ff4d79;
+  font-weight: bold;
+}
+
+.photo-grid {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.photo-grid img {
+  width: 30%;
+  height: 1000px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.1);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+.gallery-video {
+  width: 30%; /* Stessa larghezza delle immagini */
+  height: auto; /* Mantiene le proporzioni */
+  border-radius: 20px; /* Stesso stile delle immagini */
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2); /* Ombra */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
+}
+
+.gallery-video:hover {
+  transform: scale(1.1);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Lettera d’Amore */
+/* Animazione per la lettera */
+.letter {
+  padding: 25px;
+  margin: 30px auto;
+  width: 85%;
+  border-radius: 25px;
+  opacity: 1;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Classe per attivare l'animazione */
+.letter.fade-in {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.letter h2 {
+  font-size: 2em;
+  color: #ff4d79;
+}
+
+.letter p {
+  font-size: 2.5em;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+button {
+  background: linear-gradient(135deg, #ff4d79, #ff85a2);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff3366, #ff6699);
+  transform: scale(1.05);
+}
+
+/* Testo nascosto */
+.hidden {
+  display: none;
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #4a4a4a;
+  opacity: 0.9;
+}
+
+/* Playlist */
+.TrackListWidget_trackListGridContainer__GZGxh {
+  background-color: red;
+}
+.playlist {
+  padding: 30px;
+}
+
+.playlist h2 {
+  font-size: 2em;
+  color: #ff4d79;
+  font-weight: bold;
+}
+
+.playlist iframe {
+  width: 100%;
+  height: 500px;
+  border-radius: 15px;
+  margin-top: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #ff4d79, #ff85a2);
+  padding: 15px;
+  margin-top: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#timer {
+  background-color: white;
+  border-radius: 25px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#timer h2 {
+  font-size: 2em;
+  color: #ff4d79;
+  font-weight: bold;
+}
+
+#timePassed {
+  font-size: 2.5em;
+  color: black;
+  font-weight: bold;
+}
