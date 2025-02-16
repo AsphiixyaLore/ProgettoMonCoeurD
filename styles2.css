@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+.audio {
+  display: none;
+}
+body {
+  background-image: url(/Progetto/images/images.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ffdde1;
+  color: #ff4d79;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.intro-container {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+  position: relative;
+}
+
+#yes-btn {
+  background: #ff4d79;
+  color: white;
+}
+
+#yes-btn:hover {
+  background: #e6395f;
+}
+
+#no-btn {
+  background: #888;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
